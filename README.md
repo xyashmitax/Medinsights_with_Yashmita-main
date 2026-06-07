@@ -1,1 +1,1 @@
-https://xyashmitax.github.io/Medinsights_with_Yashmita/
+https://xyashmitax.github.io/Medinsights_with_Yashmita-main/
