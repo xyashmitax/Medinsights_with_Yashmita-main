@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+fancy
+ font-family: "Lora", serif;
+font-family: "Nunito", sans-serif;
+normal
+*/
+  
+  
+/* root styling */
+:root{
+    --light:#cae9ff;
+    --secondary: #62b6cb;
+    --dark: #1b4965;
+    --primary-color:#ce4257;  
+    --secondary-color: #5fa8d3;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+*>* {
+    box-sizing: border-box;
+}
+
+/* global styling */
+.text-light{
+    color:var(--light);
+}
+
+.text-secondary{
+    color:var(--secondary);
+}
+
+.text-dark{
+    color:var(--dark);
+}
+
+.text-primary{
+    color:var(--primary-color);
+}
+.bg-light{
+    background-color:var(--light);
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.text-title{
+    font-family:  "Lora", serif;
+    font-weight: bold;
+}
+
+.secondary-title{
+    font-family: "Nunito", sans-serif;
+}
+
+.display-1{
+    font-size: 22px;
+}
+.display-2{
+    font-size: 16px;
+}
+.display-3{
+    font-size: 14px;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.thumbnail{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.quiz-container {
+    margin-top: 30px;
+}
+
+.quiz-question {
+    background-color: #f8fbfd;
+    border-left: 5px solid var(--primary-color);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.quiz-question h3 {
+    color: var(--dark);
+    font-family: "Lora", serif;
+    margin-top: 0;
+}
+
+.quiz-question label {
+    display: block;
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+.quiz-question input {
+    margin-right: 10px;
+}
+
+.quiz-btn {
+    margin-top: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-result h2 {
+    font-family: "Lora", serif;
+    color: var(--primary-color);
+}
+.quiz-question {
+    border-left: 5px solid #ce4257;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-body {
+    min-height: 120px;
+}
+/*
+p{
+    text-indent:50px;
+ }
+*/
+
+/* section styling */
+
+/* ----------navigation menu---------- */
+
+/*.navbar{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:10px;
+}
+.nav-brand{
+    font-family:"Lora", serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}*/
+
+/* --------- Main Section --------- */
+
+#site-main{
+    margin-top: 8em;
+}
+
+#posts{
+    margin-bottom: 5em;
+}
+
+/*.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.grid .grid-item {
+    width: calc(33.3333% - 20px);
+    margin-bottom: 3em;
+}*/
+
+.grid {
+    display: grid; /* ensure it's a grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* automatically fill with columns */
+    gap: 20px; /* space between items */
+    margin: 0 auto; /* center grid */
+    margin-top: 2em;
+}
+
+.grid-item {
+    margin-bottom: 3em; /* maintain your original margin */
+}
+
+/* --------- .Main Section --------- */
+
+/* --------- Footer --------- */
+#footer{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--light); /* Set the background color to secondary */
+}    
+
+#footer .tags a{
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/*
+#footer .feature-post .flex-item{
+    margin-bottom: 10px;
+}
+
+#footer .tags a{
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#footer .copyrights{
+    padding: 10px 0;
+    border-top: 2px solid var(--light);
+}*/
+/* --------- .Footer --------- */
+
+
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-brand {
+    font-family: "Lora", serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}
+.collapse{
+    align-self: center;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+
+}
+.navbar-nav li {
+    margin: 0 10px;
+}
+.nav-link {
+    font-size: 18px;
+    margin: 12px;
+    padding: 10px;
+    color: var(--dark);
+    font-family: "Nunito", sans-serif;
+}
+
+.nav-link:hover{
+    color:var(--primary-color);
+}
+
+.search-box {
+    display: flex; /* Change to flex to align items properly */
+    align-items: center; /* Center the search icon vertically */
+    border-right: 1px solid var(--secondary);
+    padding-right: 12px;
+    margin-right: 10px;
+}
+
+.toggle-button{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right:0;
+    margin: 8px 10px;
+    display: none;
+}
+
+.toggle-button:focus{
+    outline: none;
+}
+
+
+
+/* ----------.navigation menu---------- */
+
+
+/* media query */
+
+.row{
+    display: flex;
+}
+
+.col-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 35px;
+}
+
+@media (max-width: 1024px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 35px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 574px){
+    .toggle-button{
+        display: initial;
+    }
+
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+        transition:all 0.8s cubic-bezier(0.98, 0, 0.01, 1);
+    }
+
+    .collapse .nav-link{
+        display: block;
+        text-align: center; 
+    }
+
+    .search-box{
+        border-right: none;
+    }
+
+    .collapse-toggle{
+        max-height: 500px;
+    }
+
+}
+#footer .text-secondary,
+#footer p,
+#footer a {
+    color: var(--dark);
+}
+
